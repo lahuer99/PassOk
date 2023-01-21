@@ -1,0 +1,4 @@
+- need to show strength in bars and colors
+- store passwd other than clear text[encrypt]
+- need to store to db no?
+- random passwd gen
