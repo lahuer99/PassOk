@@ -6,6 +6,11 @@ public class Passwd implements Serializable{//check serialization
 	private String passwdText;
 	private int passwdStrength;
 	
+	public Passwd(String passwdText) {
+		super();
+		this.passwdText = passwdText;
+	}
+	
 	public String getPasswdText() {
 		return passwdText;
 	}
@@ -21,8 +26,26 @@ public class Passwd implements Serializable{//check serialization
 	
 	public void calcAndSetPasswdStrength() {
 		//length>8,upper and lowercase,numbers,special characters
-		int currStr=-1;
+		int currStre=-1;
 		
-		setPasswdStrength(currStr);
+		if(passwdText.length()>8) {
+			currStre++;
+		}
+	
+//		use regex for uppercase and lowercase
+		if(passwdText.contains(passwdText)) {
+			
+		}
+		
+//		use regex for nos
+		
+		setPasswdStrength(currStre);
 	}
+	
+	public String showModBetterPasswd() {
+//		should return the modified better version of this passwd
+//		ex : noob => N00b,nOoB,nO0b,nOOB1
+		return passwdText;
+	}
+	
 }
