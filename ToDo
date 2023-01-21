@@ -1,3 +1,9 @@
+- complete rem strength calc
+- ponder on interface
+- workon modBetterPasswd()
+
+- add db conn; store as cleartxt for now with strength and pagefor,date passwd mod
+
 - need to show strength in bars and colors
 - store passwd other than clear text[encrypt]
 - need to store to db no?
