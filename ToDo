@@ -1,9 +1,8 @@
-- add date add+lmod
-- ponder on interface and structure
 - workon modBetterPasswd()
-
-- need to store to db no?add db conn; store strength,bar and (pagefor),date passwd add+lmod
-
+- ponder on interface and structure
 - need to show strength in bars and colors
+
+- need to store to db no?add db conn; 
+
 - store passwd other than clear text[encrypt]
 - random passwd gen
