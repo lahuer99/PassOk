@@ -1,6 +1,5 @@
-- passwd strength stuff as another class implementing the interface?? util for helper stuff?
-- dispStrengthBar(); need to show strength in bar(locading animation too)
 - workon modBetterPasswd()| enums? recurse(merge)??
+- loading animation too?? other than strength bar
 - ponder on interface and structure
 
 - need to store to db no?add db conn; 
