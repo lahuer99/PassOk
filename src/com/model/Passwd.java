@@ -52,12 +52,6 @@ public class Passwd{//check serialization -bytestream,ciphers??
 	public void setDateLastModified(LocalDateTime dateLastModified) {
 		this.dateLastModified = dateLastModified;
 	}
-
-	public String showModBetterPasswd() {
-//		should return the modified better version of this passwd
-//		ex : noob => N00b,nOoB,nO0b,nOOB1
-		return passwdText;
-	}
 	
 	@Override
 		public String toString() {
