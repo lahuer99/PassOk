@@ -1,5 +1,6 @@
 package com.util;
 
+import java.time.LocalDateTime;
 import java.util.regex.Matcher;
 
 import com.model.Passwd;
@@ -46,6 +47,8 @@ public class PasswdUtil implements BasePasswdInterface{
 		
 		passwd.setPasswdStrength(currStre);
 		passwd.setPasswdStrengthBar(passwdStrengthBar);
+//		should happen if new passwd != old passwd
+		//		passwd.setDateLastModified(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
 	}
 	
 	@Override

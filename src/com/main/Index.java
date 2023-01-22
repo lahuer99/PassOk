@@ -1,5 +1,6 @@
 package com.main;
 
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 import com.model.Passwd;
@@ -14,7 +15,7 @@ public class Index {
 		
 		System.out.println(str);
 		
-		Passwd pwd=new Passwd(str);
+		Passwd pwd=new Passwd(str,LocalDateTime.now());
 		PasswdUtil pwdUtil=new PasswdUtil();
 //		how to set strength on initialization of object itself??
 //		calling methods from constr is bad practice
@@ -24,7 +25,7 @@ public class Index {
 //		currently have strength and strengthBar to show bar and green/red over text in UI
 		if(pwd.getPasswdStrength()>1) {//get strength
 			//suggest modified passwd for same
-			PasswdPersist.saveToFile(pwd.getPasswdText());
+			PasswdPersist.saveToFile(pwd.toString()+'\n');
 			System.out.println("gu");
 		}else {
 //			accept passwd
